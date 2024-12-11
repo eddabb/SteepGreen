@@ -1,0 +1,111 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 0; /* Certificando que não há margem no topo */
+}
+
+/* Estilo do Header */
+header {
+    background-color: #2ecc71;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Faz o header ficar fixo no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo */
+}
+
+/* Container do conteúdo do header */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo como background da div */
+.logo {
+    width: 60px;  /* Definindo o tamanho da imagem */
+    height: 60px;
+    background-image: url('../imagens/WhatsApp\ Image\ 2024-10-24\ at\ 15.34.02.jpeg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;  /* Faz a imagem cobrir toda a área da div */
+    background-position: center; /* Centraliza a imagem dentro da div */
+    border-radius: 50%;  /* Tornando a imagem redonda */
+    margin-right: 15px;  /* Espaço entre a imagem e o título */
+}
+
+/* Estilo do título */
+header h1 {
+    font-size: 22px;
+    color: white;
+    margin: 0;
+}
+
+/* Estilo do container onde o login está */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* Deixa um espaço para o header fixo */
+}
+
+/* Estilo da caixa de login */
+.login-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.message {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+label {
+    font-size: 16px;
+    color: #34495e;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+button:focus {
+    outline: none;
+}
